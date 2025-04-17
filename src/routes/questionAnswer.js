@@ -12,6 +12,6 @@ const questionAnswerRoutes = Router();
 questionAnswerRoutes.get("/faq/:faqid", getSingleFaq);
 questionAnswerRoutes.post("/faq/state", createSingleStateFaq);
 questionAnswerRoutes.post("/faq/sublocality", createSingleSublocalityFaq);
-questionAnswerRoutes.put("/faq/:id", updateSingleFaq);
-questionAnswerRoutes.delete("/faq/:id", deleteSingleFaq);
+questionAnswerRoutes.put("/faq", updateSingleFaq);
+questionAnswerRoutes.delete("/faq", deleteSingleFaq);
 export { questionAnswerRoutes };
